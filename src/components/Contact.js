@@ -46,7 +46,7 @@ export default function Contact() {
         <br></br>
 
         <a
-          href="/path-to-your-resume.pdf"
+          href="https://drive.google.com/file/d/1CJhHjFF-D8kuWGMbUOdLrTc9c3A1S2tr/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="resume-btn"
