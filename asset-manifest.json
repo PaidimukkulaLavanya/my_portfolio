@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/my_portfolio/static/css/main.41e0639c.css",
+    "main.js": "/my_portfolio/static/js/main.61ce0236.js",
+    "static/js/453.acca0757.chunk.js": "/my_portfolio/static/js/453.acca0757.chunk.js",
+    "static/media/blue.jpg": "/my_portfolio/static/media/blue.fbaf61bba08d29328548.jpg",
+    "static/media/css.png": "/my_portfolio/static/media/css.4548cd51ef22b9444d1d.png",
+    "static/media/android.png": "/my_portfolio/static/media/android.c061ecba26b8a594fed9.png",
+    "static/media/react.png": "/my_portfolio/static/media/react.2be51f1b08b51e7aae0c.png",
+    "static/media/js.png": "/my_portfolio/static/media/js.f31d87005576f248b032.png",
+    "static/media/cpp.png": "/my_portfolio/static/media/cpp.dd7e416b3144a116f684.png",
+    "static/media/flutter.png": "/my_portfolio/static/media/flutter.f560f20ae3b73da69b36.png",
+    "static/media/c.png": "/my_portfolio/static/media/c.b6e2cd29a1f3a03d5682.png",
+    "static/media/py.png": "/my_portfolio/static/media/py.d3d1ad55d377c48c6a7d.png",
+    "static/media/java.png": "/my_portfolio/static/media/java.95f10a575b66fe4efa4b.png",
+    "static/media/node.png": "/my_portfolio/static/media/node.a5f6da5528e2653c944f.png",
+    "static/media/express.png": "/my_portfolio/static/media/express.f25e766ce05152cd7dda.png",
+    "static/media/html.png": "/my_portfolio/static/media/html.1e0123a08740be8ab4f8.png",
+    "static/media/avataaars.png": "/my_portfolio/static/media/avataaars.5f8f499a178fe7fae7d7.png",
+    "index.html": "/my_portfolio/index.html",
+    "main.41e0639c.css.map": "/my_portfolio/static/css/main.41e0639c.css.map",
+    "main.61ce0236.js.map": "/my_portfolio/static/js/main.61ce0236.js.map",
+    "453.acca0757.chunk.js.map": "/my_portfolio/static/js/453.acca0757.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.41e0639c.css",
+    "static/js/main.61ce0236.js"
+  ]
+}
