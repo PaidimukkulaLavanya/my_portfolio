@@ -1,0 +1,71 @@
+/* nav.css */
+
+nav {
+  background-color: #fff;
+  padding: 0.05rem 0.5rem; /* Extra thin top/bottom padding for a very compact bar */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between; /* Keeps logo on left, now pulls nav items further left too */
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav .logo {
+  font-size: 1.2rem; /* Adjusted for thinness, fine-tune as needed */
+  font-weight: 700;
+  color: #ff6600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1; /* Helps reduce intrinsic height around text */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem; /* Space between individual nav items */
+  margin: 0;
+  padding: 0;
+  margin-right: 5rem; /* PULLS THE ENTIRE UL BLOCK TO THE LEFT. Adjust this value! */
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 1.3rem; /* Adjusted for thinness, fine-tune as needed */
+  padding: 0.1rem 0; /* Minimal vertical padding for links themselves */
+  transition: color 0.3s ease;
+  line-height: 1; /* Helps reduce intrinsic height around text */
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #ff6600;
+  border-bottom: 2px solid #ff6600;
+}
+
+/* --- Responsive Styles --- */
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap; /* Allows items to wrap onto new lines */
+    padding: 0.05rem 0.3rem; /* Extra thin padding for mobile */
+  }
+  nav ul {
+    width: 100%; /* Make list take full width on mobile */
+    justify-content: center; /* Center nav items when wrapped */
+    gap: 1.5rem; /* Reduced gap for mobile */
+    margin-top: 0.2rem; /* Small margin above nav items when wrapped */
+    margin-right: 0; /* Remove negative margin on mobile to prevent layout issues */
+  }
+  nav .logo {
+    flex: 1 1 100%; /* Logo takes full width and centers on mobile */
+    text-align: center;
+  }
+}

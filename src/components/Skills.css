@@ -1,0 +1,128 @@
+/* Skills.css */
+
+.skills {
+  padding: 4rem 2rem;
+  background-color: #fff; /* White background for the whole section */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.skills h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #007acc;
+}
+
+.skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.skill-category h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #444;
+  text-align: center;
+}
+
+.skill-list {
+  display: flex;
+  overflow-x: auto;
+  gap: 1.8rem;
+  padding-bottom: 0.5rem;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+}
+
+.skill-list::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.skill-item {
+  min-width: 130px;
+  min-height: 130px;
+  background-color: #f9f9fb; 
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.3s;
+  border: 1px solid #ddd; /* subtle border for better separation */
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.skill-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 0.8rem;
+}
+
+.skill-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #222;
+  text-align: center;
+  user-select: none;
+}
+
+/* Optional: arrow buttons container and style (if you want to add arrows for scrolling) */
+.scroll-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 102, 0, 0.85);
+  border-radius: 50%;
+  color: white;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  z-index: 10;
+}
+
+.scroll-arrow.left {
+  left: 0;
+}
+
+.scroll-arrow.right {
+  right: 0;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .skills {
+    padding: 3rem 1rem;
+  }
+  .skill-category h3 {
+    font-size: 1.5rem;
+  }
+  .skill-item {
+    min-width: 110px;
+    min-height: 110px;
+    padding: 1rem;
+  }
+  .skill-icon {
+    width: 50px;
+    height: 50px;
+  }
+  .skill-name {
+    font-size: 1rem;
+  }
+}

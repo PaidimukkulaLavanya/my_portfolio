@@ -1,0 +1,180 @@
+.contact {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: #333;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #007acc;
+}
+
+.ready-to-work {
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+  font-weight: 600;
+  color: #ff6600;
+}
+
+/* Scrollable container with projects style */
+.coding-profiles-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 1.8rem;
+  padding-bottom: 0.5rem;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+}
+
+.coding-profiles-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.coding-profile-card {
+  flex: 0 0 140px;       /* fixed width */
+  aspect-ratio: 1 / 1;   /* square shape */
+  background-color: #f9f9fb;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+  padding: 1rem;
+  scroll-snap-align: start;
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  align-items: center;
+  justify-items: center;
+}
+
+.coding-profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  color: #007acc;
+}
+
+.profile-img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.profile-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-align: center;
+  user-select: none;
+}
+
+.resume-contact-info {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.resume-btn {
+  background-color: #ff6600;
+  color: white;
+  padding: 0.6rem 1.6rem;
+  border-radius: 25px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.resume-btn:hover {
+  background-color: #005fa3;
+}
+
+.contact-info p {
+  margin: 0.3rem 0;
+  font-size: 1.3rem;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .coding-profiles-container {
+    gap: 1.2rem;
+  }
+  .coding-profile-card {
+    flex: 0 0 120px;
+  }
+  .profile-img {
+    width: 60px;
+    height: 60px;
+  }
+  .profile-name {
+    font-size: 1rem;
+  }
+}a/* Updated coding-profile-card without image, centered text */
+.coding-profile-card {
+  flex: 0 0 140px; 
+  aspect-ratio: 1 / 1;
+  background-color: #f9f9fb;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  display: flex; /* changed from grid */
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  scroll-snap-align: start;
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Optional: Keep hover effect */
+.coding-profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  color: #007acc;
+}
+
+/* Removed image so we hide its styles */
+.profile-img {
+  display: none;
+}
+
+/* Keep this as-is */
+.profile-name {
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+  user-select: none;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .coding-profiles-container {
+    gap: 1.2rem;
+  }
+
+  .coding-profile-card {
+    flex: 0 0 120px;
+  }
+
+  .profile-img {
+    display: none;
+  }
+
+  .profile-name {
+    font-size: 2rem;
+  }
+}
+
